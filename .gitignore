@@ -1,0 +1,92 @@
+# Excluir archivos y carpetas específicos
+
+# Archivos del sistema
+/.bash_history
+/.cache/
+/.configprops/
+/.datastorage/
+/.fly/
+/.git-for-windows-updater
+/.gitconfig
+/.gk/
+/.irb_history
+/.irbrc
+/.lesshst
+/.local/
+/.nbi/
+/.node_repl_history
+/.p2/
+/.quokka/
+/.ssh/
+/.vscode-insiders/
+/.vscode/
+/.wakatime-internal.cfg
+/.wakatime.log
+/.wakatime/
+
+# Archivos y directorios comunes de aplicaciones
+/3D Objects/
+/AppData/
+/AppMods/
+/Application Data/
+/Contacts/
+/Cookies/
+/Desktop/
+/Documents/
+/Favorites/
+/IntelGraphicsProfiles/
+/Justinmind/
+/Leame.txt
+/License.txt
+/Links/
+/Local Settings/
+/Music/
+/My Documents/
+/NTUSER.DAT*
+/NetHood/
+/OneDrive/
+/Order.htm
+/Pictures/
+/PrintHood/
+/Recent/
+/Recorded Calls/
+/Resources.pri/
+/Saved Games/
+/Searches/
+/SendTo/
+/Start Menu/
+/Templates/
+/Tracing/
+/UnRAR.exe
+/Uninstall.exe
+/Uninstall.lst
+/Videos/
+/WhatsNew.txt
+
+# Otros archivos
+/DIALux_Analytics_3540.trk
+/DIALux_Calculation_3540.log
+/DIALux_Graphicsinfo_3540.log
+/DIALux_Logfile_3540.log
+/DeLord/
+/Default.SFX
+/Default32.sfx
+/Descript.ion
+/Downloads/
+/GitHubToken.txt
+/JS/
+/My Music/
+/My Pictures/
+/My Videos/
+/NewProject/
+/Postulacion Desarrollador Web en QIBIT.txt
+/Preguntas de entrevista.docx
+/PruebaCreatividadSEMED.docx
+/PruebasTécnicas/
+/Schools/
+/Single Family Service.txt
+/TokenGithub.txt
+/UXUiProjects/
+/Wallpapers/
+/desktop.ini
+/lastProjects/

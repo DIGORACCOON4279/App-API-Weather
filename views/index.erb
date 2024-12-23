@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clima en Tiempo Real</title>
+  <!-- CSS Style -->
+  <link rel="stylesheet" href="/style.css">
+  <!-- Fonts Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&display=swap" rel="stylesheet">
+  <!-- Importar Plotly desde el CDN -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+  <section class="container">
+    <section class="head">
+      <h1>Clima en Tiempo Real</h1>
+      <form action="/clima" method="get">
+        <input type="text" name="ciudad" placeholder="Ingresa una ciudad" required>
+        <button type="submit">Buscar</button>
+      </form>
+    </section>
+
+    <% if @error %>
+      <p class="error"><%= @error %></p>
+    <% elsif @weather %>
+
+    <section class="data">
+
+      <div class="weather-info">
+          <h2><%= @weather[:city] %></h2>
+          <div class="forecast">
+            <div class="head-weather">
+                <p> <%= @weather[:temp] %>°C</p>
+                <div class="temperature">
+                    <p><span>Temperatura</span></p>
+                    <img src="/images/temperature.svg" alt="" class="icon-weather">
+                </div>
+            </div>
+
+            <!-- Mostrar la imagen del clima basado en la condición -->
+            <% if @weather[:condition].downcase.include?("sunny") %>
+              <img class="img-season" src="/images/sunny.gif" alt="Soleado">
+            <% elsif @weather[:condition].downcase.include?("rain") %>
+              <img class="img-season" src="/images/stormy.gif" alt="Lluvia">
+            <% elsif @weather[:condition].downcase.include?("snow") %>
+              <img class="img-season" src="/images/snowy.gif" alt="Nieve">
+            <% else %>
+              <img class="img-season" src="/images/cloudy.gif" alt="Nublado">
+            <% end %>
+        </div>
+
+        <div class="info-season">
+          <div class="info-details">
+            <p><span>Condición</span></p>
+            <div class="item-weather">
+              <img src="/images/condition.svg" alt="" class="icon-weather">
+              <p><%= @weather[:condition] %></p>
+            </div>
+          </div>
+          <div class="info-details">
+             <p><span>Viento</span></p>
+             <div class="item-weather">
+                <img src="/images/wind.svg" alt="" class="icon-weather">
+                <p><%= @weather[:wind] %> kph</p>
+             </div>
+          </div>
+          <div class="info-details">
+              <p><span>Humedad</span></p>
+              <div class="item-weather">
+               <img src="/images/humedity.svg" alt="" class="icon-weather">
+                <p><%= @weather[:humidity] %>%</p>
+              </div>
+          </div>
+          <div class="info-details">
+            <p><span>Sensación Térmica</span></p>
+            <div class="item-weather">
+              <img src="/images/thermal.svg" alt="" class="icon-weather">
+              <p><%= @weather[:feels_like] %>°C</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Contenedor para el gráfico -->
+      <div id="weather-graph"></div>
+
+    </section>
+
+      <script>
+        // Datos del gráfico basados en las condiciones del clima
+        const data = [{
+          x: ['Temperatura', 'Humedad', 'Viento', 'Sensación Térmica'],
+          y: [<%= @weather[:temp] %>, <%= @weather[:humidity] %>, <%= @weather[:wind] %>, <%= @weather[:feels_like] %>],
+          type: 'bar',
+          marker: {
+            color: '#FF6347'
+          }
+        }];
+
+        let layout = {
+          title: 'Condiciones Climáticas en <%= @weather[:city] %>',
+          xaxis: {
+            title: 'Variables'
+          },
+          yaxis: {
+            title: 'Valor'
+          }
+        };
+
+        // Generar el gráfico
+        Plotly.newPlot('weather-graph', data, layout);
+      </script>
+    <% end %>
+  </section>
+</body>
+</html>
