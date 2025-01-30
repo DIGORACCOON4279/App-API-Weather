@@ -1,0 +1,18 @@
+current directory: /mnt/c/Users/ERICSON/Documents/ruby/ruby/Bootcamp/ruby/parsing-demo/Excercices/AppAPIWeather/vendor/bundle/ruby/3.1.0/gems/stringio-3.1.2/ext/stringio
+/home/diego/.rbenv/versions/3.1.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /mnt/c/Users/ERICSON/Documents/ruby/ruby/Bootcamp/ruby/parsing-demo/Excercices/AppAPIWeather/vendor/bundle/ruby/3.1.0/gems/stringio-3.1.2/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20250129-21539-yr6p1x sitelibdir\=./.gem.20250129-21539-yr6p1x clean
+
+current directory: /mnt/c/Users/ERICSON/Documents/ruby/ruby/Bootcamp/ruby/parsing-demo/Excercices/AppAPIWeather/vendor/bundle/ruby/3.1.0/gems/stringio-3.1.2/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20250129-21539-yr6p1x sitelibdir\=./.gem.20250129-21539-yr6p1x
+compiling stringio.c
+linking shared-object stringio.so
+
+current directory: /mnt/c/Users/ERICSON/Documents/ruby/ruby/Bootcamp/ruby/parsing-demo/Excercices/AppAPIWeather/vendor/bundle/ruby/3.1.0/gems/stringio-3.1.2/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20250129-21539-yr6p1x sitelibdir\=./.gem.20250129-21539-yr6p1x install
+/usr/bin/install -c -m 0755 stringio.so ./.gem.20250129-21539-yr6p1x
+
+current directory: /mnt/c/Users/ERICSON/Documents/ruby/ruby/Bootcamp/ruby/parsing-demo/Excercices/AppAPIWeather/vendor/bundle/ruby/3.1.0/gems/stringio-3.1.2/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20250129-21539-yr6p1x sitelibdir\=./.gem.20250129-21539-yr6p1x clean

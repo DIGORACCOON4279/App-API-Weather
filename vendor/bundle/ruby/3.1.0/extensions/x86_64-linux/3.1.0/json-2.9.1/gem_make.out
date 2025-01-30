@@ -1,0 +1,24 @@
+current directory: /mnt/c/Users/ERICSON/Documents/ruby/ruby/Bootcamp/ruby/parsing-demo/Excercices/AppAPIWeather/vendor/bundle/ruby/3.1.0/gems/json-2.9.1/ext/json/ext/parser
+/home/diego/.rbenv/versions/3.1.2/bin/ruby extconf.rb
+checking for rb_enc_interned_str() in ruby.h... yes
+checking for rb_hash_new_capa() in ruby.h... no
+checking for rb_hash_bulk_insert() in ruby.h... yes
+checking for rb_category_warn() in ruby.h... yes
+checking for strnlen() in string.h... yes
+checking for whether -std=c99 is accepted as CFLAGS... yes
+creating Makefile
+
+current directory: /mnt/c/Users/ERICSON/Documents/ruby/ruby/Bootcamp/ruby/parsing-demo/Excercices/AppAPIWeather/vendor/bundle/ruby/3.1.0/gems/json-2.9.1/ext/json/ext/parser
+make DESTDIR\= sitearchdir\=./.gem.20250129-21539-2xe66v sitelibdir\=./.gem.20250129-21539-2xe66v clean
+
+current directory: /mnt/c/Users/ERICSON/Documents/ruby/ruby/Bootcamp/ruby/parsing-demo/Excercices/AppAPIWeather/vendor/bundle/ruby/3.1.0/gems/json-2.9.1/ext/json/ext/parser
+make DESTDIR\= sitearchdir\=./.gem.20250129-21539-2xe66v sitelibdir\=./.gem.20250129-21539-2xe66v
+compiling parser.c
+linking shared-object json/ext/parser.so
+
+current directory: /mnt/c/Users/ERICSON/Documents/ruby/ruby/Bootcamp/ruby/parsing-demo/Excercices/AppAPIWeather/vendor/bundle/ruby/3.1.0/gems/json-2.9.1/ext/json/ext/parser
+make DESTDIR\= sitearchdir\=./.gem.20250129-21539-2xe66v sitelibdir\=./.gem.20250129-21539-2xe66v install
+/usr/bin/install -c -m 0755 parser.so ./.gem.20250129-21539-2xe66v/json/ext
+
+current directory: /mnt/c/Users/ERICSON/Documents/ruby/ruby/Bootcamp/ruby/parsing-demo/Excercices/AppAPIWeather/vendor/bundle/ruby/3.1.0/gems/json-2.9.1/ext/json/ext/parser
+make DESTDIR\= sitearchdir\=./.gem.20250129-21539-2xe66v sitelibdir\=./.gem.20250129-21539-2xe66v clean
