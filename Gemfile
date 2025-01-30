@@ -6,6 +6,6 @@ gem 'sinatra'
 gem 'puma'
 
 # Framework para aplicaciones web
-# gem 'rack'
+gem 'rack'
 
 gem "rackup", "~> 2.2"
