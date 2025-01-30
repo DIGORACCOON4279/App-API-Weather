@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: my-weather-app
+    runtime: ruby
+    envVars:
+      - key: PORT
+        value: 10000
+    buildCommand: "bundle install"
+    startCommand: "bundle exec ruby api_demo.rb -p $PORT"
