@@ -1,2 +1,2 @@
-web: bundle exec ruby api_demo.rb -p $PORT
 
+web: ./start.sh
