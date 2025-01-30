@@ -9,3 +9,7 @@ gem 'puma'
 gem 'rack'
 
 gem "rackup", "~> 2.2"
+
+gem 'open-uri'
+
+gem 'json'
