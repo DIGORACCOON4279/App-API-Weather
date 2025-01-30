@@ -1,5 +1,11 @@
 source 'https://rubygems.org'
 
 gem 'sinatra'
-gem 'puma'  # Si estás usando Puma para producción
-gem 'rack'   # Framework para aplicaciones web
+
+# Si estás usando Puma para producción
+gem 'puma'
+
+# Framework para aplicaciones web
+# gem 'rack'
+
+gem "rackup", "~> 2.2"
