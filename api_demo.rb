@@ -4,6 +4,8 @@ require 'sinatra'
 require 'open-uri'
 require 'json'
 
+set :port, ENV['PORT'] || 4567  # Render utilizará el puerto especificado por la variable de entorno
+
 # Tu API Key
 API_KEY = 'b057e136c8094a1fbc100414242212'
 
